@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dick Pieles — Reforma y restauración de abrigos de piel</title>
+  <meta name="description" content="Reforma, restauración, limpieza y guarda de abrigos de piel en Buenos Aires. Más de 40 años renovando y cuidando pieles finas con calidad artesanal." />
+  <link rel="canonical" href="https://pielesdick.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pielesdick.com/" />
+  <meta property="og:title" content="Dick Pieles — Reforma y restauración de abrigos de piel" />
+  <meta property="og:description" content="Reforma, restauración, limpieza y guarda profesional de abrigos de piel en Buenos Aires. Más de 40 años de trayectoria en el cuidado y renovación de pieles finas." />
+  <meta property="og:image" content="https://pielesdick.com/images/hero-perchero.jpg" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:site_name" content="Dick Pieles" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dick Pieles — Reforma y restauración de abrigos de piel" />
+  <meta name="twitter:description" content="Reforma, restauración, limpieza y guarda profesional de abrigos de piel en Buenos Aires. Más de 40 años de trayectoria en el cuidado y renovación de pieles finas." />
+  <meta name="twitter:image" content="https://pielesdick.com/images/hero-perchero.jpg" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <meta name="theme-color" content="#0C0C0C" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ─── RESET & BASE ─────────────────────────────────────────────── */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --negro:    #0C0C0C;
+      --oscuro:   #141414;
+      --medio:    #1E1C1A;
+      --dorado:   #C9A84C;
+      --dorado-l: #E0C97A;
+      --bordo:    #7A1F2E;
+      --bordo-l:  #9B2A3C;
+      --crema:    #F5F0E8;
+      --gris:     #A89880;
+      --blanco:   #FFFFFF;
+      --radio:    4px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--negro);
+      color: var(--crema);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.2;
+    }
+
+    img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── UTILIDADES ────────────────────────────────────────────────── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    .section { padding: 100px 0; }
+
+    .section-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--dorado);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--crema);
+      margin-bottom: 20px;
+    }
+
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--gris);
+      max-width: 600px;
+      font-weight: 300;
+    }
+
+    .divider {
+      width: 60px;
+      height: 2px;
+      background: var(--dorado);
+      margin: 24px 0;
+    }
+
+    /* Botón principal */
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--dorado);
+      color: var(--negro);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 18px 36px;
+      border-radius: var(--radio);
+      transition: background 0.3s, transform 0.2s;
+    }
+    .btn-wa:hover { background: var(--dorado-l); transform: translateY(-2px); }
+    .btn-wa svg { flex-shrink: 0; }
+
+    /* Botón secundario (outline) */
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--dorado);
+      color: var(--dorado);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 16px 32px;
+      border-radius: var(--radio);
+      transition: background 0.3s, color 0.3s;
+    }
+    .btn-outline:hover { background: var(--dorado); color: var(--negro); }
+
+    /* ─── NAVBAR ────────────────────────────────────────────────────── */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 20px 0;
+      background: transparent;
+      transition: background 0.4s, padding 0.4s;
+    }
+    .navbar.scrolled {
+      background: rgba(12,12,12,0.96);
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+    }
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--crema);
+      letter-spacing: 1px;
+    }
+    .navbar-logo span { color: var(--dorado); }
+    .navbar-logo { display: inline-flex; align-items: center; }
+    .navbar-logo img { height: 48px; width: auto; display: block; transition: height 0.4s; }
+    .navbar.scrolled .navbar-logo img { height: 40px; }
+
+    .navbar-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+    .navbar-links a {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gris);
+      transition: color 0.2s;
+    }
+    .navbar-links a:hover { color: var(--dorado); }
+
+    .navbar-cta {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--negro);
+      background: var(--dorado);
+      padding: 10px 22px;
+      border-radius: var(--radio);
+      transition: background 0.2s;
+    }
+    .navbar-cta:hover { background: var(--dorado-l); }
+
+    /* ─── HERO ──────────────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/hero-perchero.jpg');
+      background-size: cover;
+      background-position: center 20%;
+      filter: brightness(0.35);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(122,31,46,0.4) 0%, rgba(12,12,12,0.2) 60%, rgba(12,12,12,0.8) 100%);
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+      padding-top: 120px;
+      padding-bottom: 80px;
+    }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--dorado);
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      color: var(--crema);
+      max-width: 700px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--dorado);
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: rgba(245,240,232,0.75);
+      max-width: 520px;
+      font-weight: 300;
+      margin-bottom: 48px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gris);
+    }
+    .hero-scroll-line {
+      width: 1px;
+      height: 50px;
+      background: linear-gradient(to bottom, var(--dorado), transparent);
+      animation: scrollDown 2s infinite;
+    }
+    @keyframes scrollDown {
+      0%   { transform: scaleY(0); transform-origin: top; }
+      50%  { transform: scaleY(1); transform-origin: top; }
+      51%  { transform: scaleY(1); transform-origin: bottom; }
+      100% { transform: scaleY(0); transform-origin: bottom; }
+    }
+
+    /* ─── PROPUESTA DE VALOR ────────────────────────────────────────── */
+    .valores {
+      background: var(--oscuro);
+      border-top: 1px solid rgba(201,168,76,0.1);
+      border-bottom: 1px solid rgba(201,168,76,0.1);
+    }
+
+    .valores .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+
+    .valor-item {
+      padding: 64px 48px;
+      border-right: 1px solid rgba(201,168,76,0.1);
+      transition: background 0.3s;
+    }
+    .valor-item:last-child { border-right: none; }
+    .valor-item:hover { background: rgba(201,168,76,0.04); }
+
+    .valor-icon {
+      width: 52px;
+      height: 52px;
+      background: rgba(201,168,76,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    .valor-icon svg { color: var(--dorado); }
+
+    .valor-item h3 {
+      font-size: 1.2rem;
+      color: var(--crema);
+      margin-bottom: 12px;
+    }
+
+    .valor-item p {
+      font-size: 0.9rem;
+      color: var(--gris);
+      font-weight: 300;
+    }
+
+    /* ─── SERVICIOS ─────────────────────────────────────────────────── */
+    .servicios { background: var(--negro); }
+
+    .servicios-header { margin-bottom: 64px; }
+
+    .servicios-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+    }
+
+    .servicio-card {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      cursor: default;
+    }
+
+    .servicio-card img {
+      transition: transform 0.6s ease;
+      filter: brightness(0.45);
+    }
+    .servicio-card:hover img { transform: scale(1.06); filter: brightness(0.35); }
+
+    .servicio-content {
+      position: absolute;
+      inset: 0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .servicio-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: rgba(201,168,76,0.2);
+      position: absolute;
+      top: 28px;
+      right: 36px;
+      line-height: 1;
+    }
+
+    .servicio-card h3 {
+      font-size: 1.5rem;
+      color: var(--crema);
+      margin-bottom: 8px;
+    }
+
+    .servicio-card p {
+      font-size: 0.85rem;
+      color: rgba(245,240,232,0.65);
+      font-weight: 300;
+      max-width: 340px;
+    }
+
+    .servicio-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--dorado);
+      margin-bottom: 8px;
+    }
+
+    /* ─── PIELES ─────────────────────────────────────────────────────── */
+    .pieles { background: var(--negro); }
+
+    .pieles-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      margin-top: 56px;
+    }
+
+    .piel-card {
+      position: relative;
+      aspect-ratio: 3/4;
+      overflow: hidden;
+    }
+
+    .piel-card img {
+      transition: transform 0.6s ease;
+      filter: brightness(0.5);
+    }
+    .piel-card:hover img { transform: scale(1.06); filter: brightness(0.35); }
+
+    /* Tarjetas con foto de producto sobre fondo blanco */
+    .piel-producto { background: #fff; }
+    .piel-producto img { filter: none; object-fit: contain; }
+    .piel-producto:hover img { filter: none; transform: scale(1.04); }
+
+    .piel-info {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 28px 24px;
+      background: linear-gradient(to top, rgba(12,12,12,0.85) 0%, transparent 60%);
+    }
+
+    .piel-info h3 {
+      font-size: 1.4rem;
+      color: var(--crema);
+      margin-bottom: 6px;
+    }
+
+    .piel-info p {
+      font-size: 0.8rem;
+      color: rgba(245,240,232,0.6);
+      font-weight: 300;
+    }
+
+    .piel-tag {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--dorado);
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 768px) {
+      .pieles-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ─── SOBRE NOSOTROS ────────────────────────────────────────────── */
+    .nosotros { background: var(--oscuro); }
+
+    .nosotros .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .nosotros-image {
+      position: relative;
+    }
+
+    .nosotros-img-wrap {
+      position: relative;
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      border-radius: var(--radio);
+    }
+
+    .nosotros-img-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(201,168,76,0.25);
+      border-radius: var(--radio);
+    }
+
+    .nosotros-quote {
+      position: absolute;
+      bottom: -32px;
+      right: -32px;
+      background: var(--bordo);
+      border-radius: var(--radio);
+      padding: 28px 32px;
+      max-width: 280px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nosotros-quote p {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: var(--crema);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .nosotros-quote span {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--dorado);
+    }
+
+    .nosotros-content { padding-bottom: 32px; }
+
+    .generaciones {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 40px 0 48px;
+      position: relative;
+    }
+
+    .generaciones::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 24px;
+      bottom: 24px;
+      width: 1px;
+      background: linear-gradient(to bottom, var(--dorado), rgba(201,168,76,0.1));
+    }
+
+    .generacion {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      padding: 20px 0;
+    }
+
+    .gen-dot {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--medio);
+      border: 2px solid var(--dorado);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--dorado);
+      position: relative;
+      z-index: 1;
+    }
+
+    .gen-body { padding-top: 8px; }
+
+    .gen-body strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--crema);
+      margin-bottom: 4px;
+    }
+
+    .gen-body p {
+      font-size: 0.85rem;
+      color: var(--gris);
+      font-weight: 300;
+    }
+
+    @media (max-width: 1024px) {
+      .nosotros .container { grid-template-columns: 1fr; }
+      .nosotros-quote { position: static; margin-top: 24px; max-width: 100%; }
+    }
+
+    /* ─── CÓMO FUNCIONA ─────────────────────────────────────────────── */
+    .proceso { background: var(--medio); }
+
+    .proceso .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .proceso-image {
+      position: relative;
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      border-radius: var(--radio);
+    }
+
+    .proceso-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: var(--radio);
+    }
+
+    .proceso-image-inner {
+      width: 100%;
+      height: 100%;
+    }
+
+    .proceso-badge {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      width: 130px;
+      height: 130px;
+      background: var(--dorado);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 16px;
+    }
+    .proceso-badge strong {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--negro);
+      line-height: 1;
+    }
+    .proceso-badge span {
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(12,12,12,0.7);
+      margin-top: 4px;
+    }
+
+    .proceso-pasos { display: flex; flex-direction: column; gap: 40px; }
+
+    .paso {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    .paso-num {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--dorado);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--dorado);
+    }
+
+    .paso-body h4 {
+      font-size: 1.1rem;
+      color: var(--crema);
+      margin-bottom: 6px;
+    }
+
+    .paso-body p {
+      font-size: 0.88rem;
+      color: var(--gris);
+      font-weight: 300;
+    }
+
+    /* ─── GALERÍA ────────────────────────────────────────────────────── */
+    .galeria { background: var(--negro); }
+    .galeria-header { margin-bottom: 48px; }
+
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      gap: 8px;
+    }
+
+    .galeria-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radio);
+    }
+
+    .galeria-item:first-child {
+      grid-column: span 2;
+      aspect-ratio: 2 / 1;
+    }
+
+    .galeria-item:not(:first-child) {
+      aspect-ratio: 1;
+    }
+
+    .galeria-item img {
+      transition: transform 0.5s ease;
+      filter: brightness(0.8);
+    }
+    .galeria-item:hover img { transform: scale(1.05); filter: brightness(0.65); }
+
+    .galeria-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(122,31,46,0);
+      transition: background 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .galeria-item:hover .galeria-overlay { background: rgba(122,31,46,0.25); }
+
+    .galeria-label {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--dorado);
+      background: rgba(12,12,12,0.7);
+      padding: 4px 10px;
+      border-radius: 2px;
+    }
+
+    /* ─── TESTIMONIOS ────────────────────────────────────────────────── */
+    .testimonios { background: var(--oscuro); }
+
+    .testimonios-header { margin-bottom: 60px; }
+
+    .testimonios-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .testimonio {
+      background: var(--medio);
+      border: 1px solid rgba(201,168,76,0.12);
+      border-radius: var(--radio);
+      padding: 40px 36px;
+      transition: border-color 0.3s;
+    }
+    .testimonio:hover { border-color: rgba(201,168,76,0.35); }
+
+    .testimonio-stars {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 20px;
+    }
+    .star { color: var(--dorado); font-size: 14px; }
+
+    .testimonio blockquote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--crema);
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    .testimonio-autor {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .testimonio-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 2px solid var(--dorado);
+    }
+
+    .testimonio-nombre {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--crema);
+    }
+
+    .testimonio-ciudad {
+      font-size: 0.78rem;
+      color: var(--gris);
+      font-weight: 300;
+    }
+
+    /* ─── CTA FINAL ──────────────────────────────────────────────────── */
+    .cta-final {
+      position: relative;
+      padding: 140px 0;
+      overflow: hidden;
+    }
+
+    .cta-final-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/store-vidriera.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.2);
+    }
+
+    .cta-final-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(122,31,46,0.6), rgba(12,12,12,0.4));
+    }
+
+    .cta-final .container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .cta-final h2 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: var(--crema);
+      max-width: 720px;
+      margin: 0 auto 20px;
+    }
+
+    .cta-final h2 em { font-style: italic; color: var(--dorado); }
+
+    .cta-final p {
+      color: rgba(245,240,232,0.7);
+      max-width: 480px;
+      margin: 0 auto 48px;
+      font-weight: 300;
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────────────────── */
+    .footer {
+      background: #080808;
+      border-top: 1px solid rgba(201,168,76,0.12);
+      padding: 64px 0 40px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 64px;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: var(--gris);
+      font-weight: 300;
+      margin-top: 16px;
+      max-width: 280px;
+      line-height: 1.8;
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--crema);
+    }
+    .footer-logo span { color: var(--dorado); }
+    .footer-logo img { height: 60px; width: auto; display: block; margin-bottom: 4px; }
+
+    .footer-col h4 {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--dorado);
+      margin-bottom: 20px;
+    }
+
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+    .footer-col ul li a {
+      font-size: 0.88rem;
+      color: var(--gris);
+      transition: color 0.2s;
+      font-weight: 300;
+    }
+    .footer-col ul li a:hover { color: var(--crema); }
+
+    .footer-contact-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 0.88rem;
+      color: var(--gris);
+      margin-bottom: 12px;
+      font-weight: 300;
+    }
+    .footer-contact-item svg { flex-shrink: 0; margin-top: 2px; color: var(--dorado); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-bottom p {
+      font-size: 0.8rem;
+      color: rgba(168,152,128,0.5);
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 16px;
+    }
+
+    .social-link {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gris);
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .social-link:hover { border-color: var(--dorado); color: var(--dorado); }
+
+    /* ─── BOTÓN FLOTANTE WHATSAPP ───────────────────────────────────── */
+    .wa-float {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      z-index: 200;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.55); }
+    .wa-float svg { width: 28px; height: 28px; color: #fff; }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .valores .container { grid-template-columns: 1fr; }
+      .valor-item { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.1); padding: 48px 32px; }
+      .valor-item:last-child { border-bottom: none; }
+
+      .proceso .container { grid-template-columns: 1fr; }
+      .proceso-image { max-width: 400px; }
+      .proceso-badge { bottom: -16px; right: -16px; width: 110px; height: 110px; }
+
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .section { padding: 72px 0; }
+
+      .navbar-links { display: none; }
+      .navbar-cta { display: none; }
+
+      .hero h1 { font-size: 2.4rem; }
+      .hero-ctas { flex-direction: column; }
+
+      .servicios-grid { grid-template-columns: 1fr; }
+      .servicio-card { aspect-ratio: 3/2; }
+
+      .galeria-grid { grid-template-columns: 1fr 1fr; }
+      .galeria-item:first-child { grid-column: span 2; }
+
+      .testimonios-grid { grid-template-columns: 1fr; }
+
+      .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+      .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+
+      .wa-float { bottom: 20px; right: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ════════════════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#inicio" class="navbar-logo"><img src="images/logo.png" alt="Pieles Dick" /></a>
+      <ul class="navbar-links">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="https://wa.me/5411502191986?text=Hola%2C%20quiero%20consultar%20sobre%20la%20reforma%20de%20mi%20abrigo" class="navbar-cta" target="_blank" rel="noopener">
+        Pedir presupuesto
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ══════════════════════════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <p class="hero-eyebrow">Atelier de pieles — Buenos Aires</p>
+      <h1>Le devolvemos<br/><em>la vida</em><br/>a tu historia</h1>
+      <p class="hero-desc">
+        Transformamos abrigos de piel heredados en piezas únicas y contemporáneas.
+        Tradición artesanal al servicio de la moda sostenible.
+      </p>
+      <div class="hero-ctas">
+        <a
+          href="https://wa.me/5411502191986?text=Hola%2C%20quiero%20consultar%20sobre%20la%20reforma%20de%20mi%20abrigo"
+          class="btn-wa"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Pedir presupuesto gratis
+        </a>
+        <a href="#servicios" class="btn-outline">Ver servicios</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Descubrir</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══ VALORES ═══════════════════════════════════════════════════════ -->
+  <section class="valores section">
+    <div class="container">
+      <div class="valor-item">
+        <div class="valor-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        </div>
+        <h3>Tradición artesanal</h3>
+        <p>Décadas de experiencia trabajando pieles nobles con técnicas transmitidas de generación en generación.</p>
+      </div>
+      <div class="valor-item">
+        <div class="valor-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 12a9 9 0 1018 0 9 9 0 00-18 0M3.6 9h16.8M3.6 15h16.8"/>
+            <path d="M11.5 3a17 17 0 000 18M12.5 3a17 17 0 010 18"/>
+          </svg>
+        </div>
+        <h3>Moda sostenible</h3>
+        <p>Dar nueva vida a un abrigo existente es el gesto más responsable con el planeta. Upcycling de alta calidad.</p>
+      </div>
+      <div class="valor-item">
+        <div class="valor-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3>Garantía y confianza</h3>
+        <p>Cada trabajo sale con garantía. Tu abrigo está en manos de especialistas que lo cuidan como propio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PIELES ════════════════════════════════════════════════════════ -->
+  <section class="pieles section">
+    <div class="container">
+      <p class="section-label">Nuestra especialidad</p>
+      <h2 class="section-title">Trabajamos con las pieles<br/>más nobles del mundo</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">Cada tipo de piel tiene su carácter, sus tiempos y su técnica. Décadas de experiencia nos permiten trabajarlas todas con el respeto que merecen.</p>
+      <div class="pieles-grid">
+
+        <div class="piel-card piel-producto">
+          <img src="images/piel-vison.jpg" alt="Visón" />
+          <div class="piel-info">
+            <span class="piel-tag">La más codiciada</span>
+            <h3>Visón</h3>
+            <p>Suavidad y brillo inigualables. La reina de las pieles, transformada con maestría.</p>
+          </div>
+        </div>
+
+        <div class="piel-card piel-producto">
+          <img src="images/piel-nutria.jpg" alt="Nutria" />
+          <div class="piel-info">
+            <span class="piel-tag">Tradición argentina</span>
+            <h3>Nutria</h3>
+            <p>Una piel noble con raíces profundas en la Argentina. Resistente, cálida y elegante.</p>
+          </div>
+        </div>
+
+        <div class="piel-card piel-producto">
+          <img src="images/piel-zorro.jpg" alt="Zorro" />
+          <div class="piel-info">
+            <span class="piel-tag">Volumen y presencia</span>
+            <h3>Zorro</h3>
+            <p>Su pelo largo y esponjoso crea siluetas dramáticas y llenas de personalidad.</p>
+          </div>
+        </div>
+
+        <div class="piel-card piel-producto">
+          <img src="images/piel-zorronacional.jpg" alt="Zorro nacional" />
+          <div class="piel-info">
+            <span class="piel-tag">Autóctono argentino</span>
+            <h3>Zorro Nacional</h3>
+            <p>El zorro de nuestras tierras: tonos cálidos, pelo denso y una presencia inconfundible.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SOBRE NOSOTROS ════════════════════════════════════════════════ -->
+  <section class="nosotros section" id="nosotros">
+    <div class="container">
+      <div class="nosotros-image">
+        <div class="nosotros-img-wrap">
+          <img src="images/nosotros-sergio.jpg" alt="Sergio Dick, peletero" />
+        </div>
+        <div class="nosotros-quote">
+          <p>"Una prenda de piel bien hecha dura más de una vida. Nuestro trabajo es asegurarnos de que llegue a la próxima generación."</p>
+          <span>— Sergio Dick</span>
+        </div>
+      </div>
+      <div class="nosotros-content">
+        <p class="section-label">Quiénes somos</p>
+        <h2 class="section-title">Tres generaciones,<br/>una misma pasión</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">
+          Dick Pieles no es solo un negocio. Es una historia familiar que empezó hace casi un siglo en Buenos Aires y sigue viva hoy en el mismo atelier de Recoleta donde se forjó su reputación.
+        </p>
+        <div class="generaciones">
+          <div class="generacion">
+            <div class="gen-dot">I</div>
+            <div class="gen-body">
+              <strong>Gregorio Dick — el fundador</strong>
+              <p>Llegó a Buenos Aires en los años 30 y encontró en la peletería su vocación. Aprendió el oficio con rigor y lo convirtió en el sustento de una familia entera.</p>
+            </div>
+          </div>
+          <div class="generacion">
+            <div class="gen-dot">II</div>
+            <div class="gen-body">
+              <strong>Fredi Dick — el atelier</strong>
+              <p>Hijo de Gregorio, fue quien dio un nombre y una dirección al legado familiar. En 1970 abrió las puertas del local en Arenales 1240, Recoleta, donde Dick Pieles sigue atendiendo hasta hoy.</p>
+            </div>
+          </div>
+          <div class="generacion">
+            <div class="gen-dot">III</div>
+            <div class="gen-body">
+              <strong>Sergio Dick — la continuidad</strong>
+              <p>Con apenas 20 años comenzó a trabajar junto a su padre Fredi. Hoy, con más de 40 años de trayectoria, es reconocido como uno de los peleteros más experimentados del país. Perfeccionista hasta el último punto de aguja, Sergio combina técnica clásica con la sensibilidad de quien entiende que cada abrigo tiene una historia detrás.</p>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/5411502191986?text=Hola%2C%20quiero%20consultar%20sobre%20mi%20abrigo" class="btn-wa" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Hablá con Sergio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BANDA PAÍSES ══════════════════════════════════════════════════ -->
+  <section style="background: var(--bordo); padding: 36px 0; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08);">
+    <div class="container" style="display:flex; align-items:center; gap:24px; flex-wrap:wrap; justify-content:center;">
+      <p style="font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:rgba(245,240,232,0.6); white-space:nowrap;">Recibimos abrigos desde</p>
+      <div style="display:flex; gap:32px; flex-wrap:wrap; align-items:center; justify-content:center;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:1.4rem;">🇦🇷</span>
+          <span style="font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--crema);">Argentina</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:1.4rem;">🇧🇷</span>
+          <span style="font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--crema);">Brasil</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:1.4rem;">🇵🇾</span>
+          <span style="font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--crema);">Paraguay</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:1.4rem;">🇵🇪</span>
+          <span style="font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--crema);">Perú</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:1.4rem;">🇨🇱</span>
+          <span style="font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--crema);">Chile</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:1.4rem;">🇺🇾</span>
+          <span style="font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--crema);">Uruguay</span>
+        </div>
+      </div>
+      <a href="https://wa.me/5411502191986?text=Hola%2C%20quiero%20consultar%20sobre%20el%20env%C3%ADo%20de%20mi%20abrigo%20desde%20el%20exterior" target="_blank" rel="noopener" style="font-size:11px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--negro); background:var(--dorado); padding:10px 20px; border-radius:3px; white-space:nowrap; text-decoration:none; transition:background 0.2s;">Consultar envío →</a>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICIOS ═════════════════════════════════════════════════════ -->
+  <section class="servicios section" id="servicios">
+    <div class="container">
+      <div class="servicios-header">
+        <p class="section-label">Lo que hacemos</p>
+        <h2 class="section-title">Nuestros servicios</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Cada abrigo es único. Por eso cada trabajo comienza con una consulta personalizada y sin costo.</p>
+      </div>
+    </div>
+    <div class="servicios-grid">
+
+      <div class="servicio-card">
+        <img src="images/serv-reforma.jpg" alt="Reforma de abrigo de piel" />
+        <div class="servicio-content">
+          <span class="servicio-num">01</span>
+          <span class="servicio-tag">Transformación</span>
+          <h3>Reforma & Diseño</h3>
+          <p>Convertimos tu abrigo antiguo en una pieza completamente nueva: cambiamos el corte, el largo, el cuello y la silueta.</p>
+        </div>
+      </div>
+
+      <div class="servicio-card">
+        <img src="images/serv-reparacion.jpg" alt="Reparación de piel" />
+        <div class="servicio-content">
+          <span class="servicio-num">02</span>
+          <span class="servicio-tag">Restauración</span>
+          <h3>Reparación & Restauración</h3>
+          <p>Arreglamos desgarros, reemplazamos forros, cosemos descosidos y devolvemos el lustre original a la piel.</p>
+        </div>
+      </div>
+
+      <div class="servicio-card">
+        <img src="images/serv-limpieza.jpg" alt="Limpieza de abrigo de piel" />
+        <div class="servicio-content">
+          <span class="servicio-num">03</span>
+          <span class="servicio-tag">Cuidado</span>
+          <h3>Limpieza & Mantenimiento</h3>
+          <p>Limpieza especializada para pieles naturales que elimina manchas, olores y restaura el brillo natural sin dañar la fibra.</p>
+        </div>
+      </div>
+
+      <div class="servicio-card">
+        <img src="images/serv-guarda.jpg" alt="Guardapieles profesional" />
+        <div class="servicio-content">
+          <span class="servicio-num">04</span>
+          <span class="servicio-tag">Conservación</span>
+          <h3>Guardapieles Profesional</h3>
+          <p>Almacenamiento en cámara fría con control de temperatura y humedad para conservar tu abrigo en perfectas condiciones.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ PROCESO ═══════════════════════════════════════════════════════ -->
+  <section class="proceso section" id="proceso">
+    <div class="container">
+      <div class="proceso-image">
+        <div class="proceso-image-inner">
+          <img src="images/proceso-taller.jpg" alt="Artesano trabajando piel" style="height:100%" />
+        </div>
+        <div class="proceso-badge">
+          <strong>+30</strong>
+          <span>Años de<br/>experiencia</span>
+        </div>
+      </div>
+      <div>
+        <p class="section-label">Así trabajamos</p>
+        <h2 class="section-title">Con dedicación<br/>y a tu medida</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle" style="margin-bottom: 48px;">Tu única tarea es enviarnos una foto por WhatsApp. Nosotros nos encargamos de todo lo demás.</p>
+        <div class="proceso-pasos">
+          <div class="paso">
+            <div class="paso-num">1</div>
+            <div class="paso-body">
+              <h4>Consultá por WhatsApp</h4>
+              <p>Mandanos fotos de tu abrigo y contanos qué querés lograr. Te respondemos en el día con una valoración preliminar sin costo.</p>
+            </div>
+          </div>
+          <div class="paso">
+            <div class="paso-num">2</div>
+            <div class="paso-body">
+              <h4>Presupuesto y diseño</h4>
+              <p>Te enviamos un presupuesto detallado con todo lo que incluye el trabajo, sin letra chica ni sorpresas.</p>
+            </div>
+          </div>
+          <div class="paso">
+            <div class="paso-num">3</div>
+            <div class="paso-body">
+              <h4>Traé tu abrigo al atelier</h4>
+              <p>Nos visitás en Arenales 1240, Recoleta. Ese encuentro también es parte del proceso: vemos la prenda en persona y definimos los últimos detalles juntos.</p>
+            </div>
+          </div>
+          <div class="paso">
+            <div class="paso-num">4</div>
+            <div class="paso-body">
+              <h4>Entrega perfecta</h4>
+              <p>Te devolvemos tu abrigo transformado, con garantía escrita y el cuidado que merece una pieza tan especial.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GALERÍA ════════════════════════════════════════════════════════ -->
+  <section class="galeria section" id="galeria">
+    <div class="container">
+      <div class="galeria-header">
+        <p class="section-label">Nuestro trabajo</p>
+        <h2 class="section-title">Transformaciones reales</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Cada imagen cuenta la historia de una prenda que volvió a brillar.</p>
+      </div>
+      <div class="galeria-grid">
+        <div class="galeria-item">
+          <img src="images/gal-showroom.jpg" alt="Showroom Pieles Dick" />
+          <div class="galeria-overlay"></div>
+          <span class="galeria-label">Nuestro local</span>
+        </div>
+        <div class="galeria-item">
+          <img src="images/gal-antesdespues-2.jpg" alt="Abrigo restaurado" />
+          <div class="galeria-overlay"></div>
+          <span class="galeria-label">Antes / Después</span>
+        </div>
+        <div class="galeria-item">
+          <img src="images/gal-rack-chinchilla.jpg" alt="Abrigo limpieza" />
+          <div class="galeria-overlay"></div>
+          <span class="galeria-label">En el showroom</span>
+        </div>
+        <div class="galeria-item">
+          <img src="images/gal-rack-color.jpg" alt="Transformación chaqueta" />
+          <div class="galeria-overlay"></div>
+          <span class="galeria-label">Nuestra colección</span>
+        </div>
+        <div class="galeria-item">
+          <img src="images/gal-maquina.jpg" alt="Abrigo clásico renovado" />
+          <div class="galeria-overlay"></div>
+          <span class="galeria-label">En el taller</span>
+        </div>
+        <div class="galeria-item">
+          <img src="images/gal-corte.jpg" alt="Pieza única" />
+          <div class="galeria-overlay"></div>
+          <span class="galeria-label">Corte a mano</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ CTA FINAL ══════════════════════════════════════════════════════ -->
+  <section class="cta-final" id="contacto">
+    <div class="cta-final-bg"></div>
+    <div class="cta-final-overlay"></div>
+    <div class="container">
+      <p class="section-label" style="text-align:center">Empecemos juntos</p>
+      <h2>Tu abrigo merece<br/><em>una segunda vida</em></h2>
+      <p>Mandanos una foto por WhatsApp y en menos de 24 horas te damos una valoración gratuita.</p>
+      <a
+        href="https://wa.me/5411502191986?text=Hola%2C%20quiero%20consultar%20sobre%20la%20reforma%20de%20mi%20abrigo"
+        class="btn-wa"
+        target="_blank"
+        rel="noopener"
+        style="margin: 0 auto; font-size: 14px; padding: 20px 44px;"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Escribinos por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="images/logo.png" alt="Pieles Dick" /></div>
+          <p>Atelier especializado en reforma, restauración y cuidado de abrigos de piel desde hace más de 30 años. Cada pieza que pasa por nuestras manos tiene una historia — y nosotros la continuamos.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#servicios">Reforma y diseño</a></li>
+            <li><a href="#servicios">Reparación</a></li>
+            <li><a href="#servicios">Limpieza</a></li>
+            <li><a href="#servicios">Guardapieles</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proceso">Cómo funciona</a></li>
+            <li><a href="#galeria">Galería</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.5 12.22 19.79 19.79 0 011.42 3.63 2 2 0 013.4 1.45h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.06a16 16 0 006 6l.76-.76a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0121.27 16.93z"/>
+            </svg>
+            +54 11 5029-1986
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Arenales 1240, Recoleta<br/>Buenos Aires, Argentina
+          </div>
+          <div class="footer-contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            Lun–Vie: 11:00 a 18:00 hs
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Dick Pieles. Todos los derechos reservados.</p>
+        <div class="footer-socials">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/pieles_dick/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <!-- WhatsApp -->
+          <a href="https://wa.me/5411502191986" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ BOTÓN FLOTANTE WHATSAPP ════════════════════════════════════════ -->
+  <a
+    href="https://wa.me/5411502191986?text=Hola%2C%20quiero%20consultar%20sobre%20la%20reforma%20de%20mi%20abrigo"
+    class="wa-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Escribinos por WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ═══ JS ══════════════════════════════════════════════════════════════ -->
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+  </script>
+
+</body>
+</html>
